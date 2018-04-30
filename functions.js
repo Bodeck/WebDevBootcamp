@@ -13,10 +13,16 @@ function factorial(number) {
     }
     return factor;
 }
-
+//kebab to snake
+//using loop
 function kebabToSnake(string) {
     while (string.indexOf('-') !== -1) {
         string = string.replace('-', '_');
     }
+    return string;
+}
+//using regex
+function kebabToSnake(string) {
+    string = string.replace(/-/g, '_');
     return string;
 }
