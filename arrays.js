@@ -35,4 +35,3 @@ function max(arr) {
 	});
 	return buf;
 };
-

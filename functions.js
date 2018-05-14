@@ -26,3 +26,33 @@ function kebabToSnake(string) {
     string = string.replace(/-/g, '_');
     return string;
 }
+//write fuction to reverse string
+function reverseNum(num){
+    let buf = '';
+    num = num.toString();
+    for (let i = num.length - 1; i > 0; i--){
+        buf += num[i]; 
+    };
+    return buf;
+}
+function reverseNum2(num) {
+    num = num.toString();
+    let buf = num.split("").reverse().join("");
+    return buf;
+}
+
+//check if string is palidrome
+function isPalidrome(string){ 
+    return string === string.split("").reverse().join("");
+}
+function strCombinations (string){
+    string = string.split("");
+    var combo = [];
+    string.forEach( function(element, index) {
+        combo.push(element);
+        for (var i = index + 1; i < string.length; i++) {
+            
+        };
+    });
+    return combo
+}
