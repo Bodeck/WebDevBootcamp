@@ -27,11 +27,8 @@ function main(){
 }
 
 function randomNum(treshold) {
-    try {
-        var x =  Math.floor(Math.random()*(treshold));
+        var x =  Math.floor(Math.random()*treshold);
         console.log(x);
         return x;
-    } catch (error) {
-        console.log(error);
-    }
+
 }
