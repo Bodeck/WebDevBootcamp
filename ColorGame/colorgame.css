@@ -18,3 +18,12 @@ h1 {
     width: 60%;
     margin: 0 auto;
 }
+
+#bar {
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+.selected {
+    background-color: blue;
+}
