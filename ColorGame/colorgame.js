@@ -11,6 +11,7 @@ function main() {
     var resetBtn = document.querySelector("#reset");
     var hardBtn = document.querySelector("#hardBtn");
     var easyBtn = document.querySelector("#easyBtn");
+    var h1 = document.querySelector("h1");
     
     hardBtn.addEventListener("click", function () {
         this.classList.add("selected");
@@ -50,7 +51,7 @@ function main() {
         colorDisplay.textContent = pickedColor.toUpperCase();
         msgDisplay.textContent = "";
         this.textContent = "New colors"
-
+        h1.style.backgroundColor = "steelblue";
     });
 
     for (let i = 0; i < colors.length; i++) {
@@ -58,7 +59,7 @@ function main() {
             if (this.style.backgroundColor === pickedColor) {
                 msgDisplay.textContent = "Great!";
                 changeColors(pickedColor);
-                resetBtn.textContent = "Play again!"
+                resetBtn.textContent = "Play again?"
             } else {
                 this.style.backgroundColor = "black";
                 msgDisplay.textContent = "Wrong! Please, try again!"
@@ -103,6 +104,7 @@ function main() {
         for (let i = 0; i < squares.length; i++) {
             const element = squares[i];
             element.style.backgroundColor = color;
-        }
+        };
+        h1.style.backgroundColor = color;
     }
 }
