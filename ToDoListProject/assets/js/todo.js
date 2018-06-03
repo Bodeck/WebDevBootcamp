@@ -4,7 +4,7 @@ function main() {
         if (event.which === 13) {
             var itemTxt = $(this).val();
             $(this).val("");
-            $("#list").append('<li class="li"><span class="trashicon">X</span> ' + itemTxt + '</li>');
+            $("#list").append('<li class="li"><span class="trashicon"><i class="far fa-trash-alt"></i></span> ' + itemTxt + '</li>');
         }
     })
 
@@ -19,4 +19,7 @@ function main() {
         event.stopPropagation();
     })
 
+    $('h1 span').click(function () {
+        $('input[type="text"]').fadeToggle();
+    })
 };
