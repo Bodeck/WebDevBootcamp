@@ -20,6 +20,10 @@ h1{
     margin: 0;
 }
 
+.fa-plus{
+    float: right;
+}
+
 input {
     width: 100%;
     border-style: none;
@@ -43,8 +47,23 @@ li {
     background-color: white;
     height: 40px;
     line-height: 40px;
+}
 
+li span {
+    background-color: red;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    opacity: 0;
+    transition: 0.2s linear;
+}
 
+li:hover span {
+    width: 40px;
+    opacity: 1;
 }
 
 li:nth-child(2n){
