@@ -24,3 +24,8 @@ input {
     border-style: none;
     font-size: 20px;
 }
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
